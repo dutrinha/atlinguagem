@@ -4,20 +4,23 @@
 
 <ion-content [fullscreen]="true">
 
-  <ion-item>
+  <br>
+  <ion-item class="rng">
     <ion-input type="number" label="Prestação" labelPlacement="floating" placeholder="valor"
       [(ngModel)]="valorprestacao"></ion-input>
   </ion-item>
 
-  <ion-range labelPlacement="start" label="Taxa de Juros" [pin]="true" [pinFormatter]="pinFormatter" min="0" [(ngModel)]="taxajuros">
-  </ion-range>
+  <ion-item class="rng">
+    <ion-range labelPlacement="start" label="Taxa de Juros" [pin]="true" [pinFormatter]="pinFormatter" min="0" [(ngModel)]="taxajuros">
+    </ion-range>
+</ion-item>
 
+<ion-item class="rng">
   <ion-range labelPlacement="start" label="Meses Atrasados" [pin]="true" min="0"
     max="300" step="1" [(ngModel)]="atrasoMeses">
   </ion-range>
+</ion-item>
 
-  <ion-button expand="block" (click)="calcularPrestacao()">
-    <ion-icon name="Calcular"></ion-icon>
-  </ion-button>
+  <ion-button class="btn" expand="block" (click)="calcularPrestacao()">Calcular o valor</ion-button>
 
 </ion-content>
