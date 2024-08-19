@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tela-confirmar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-label> O valor da sua prestação é:
+    <br> ${{ valordaprestacao }}</ion-label> <br><br>
+
+  <ion-label> A taxa de juros emitida é:
+    <br> {{ TaxaJuros }}% </ion-label> <br><br>
+
+  <ion-label> Os meses atrasados são: <br>
+    {{ atrasoMeses }} meses</ion-label> <br><br>
+
+  <ion-label> Valor a pagar: <br>
+     $ {{ somatotal }}</ion-label>
+</ion-content>

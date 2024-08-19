@@ -1,0 +1,7 @@
+{
+  "name": "ATdeLPL",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

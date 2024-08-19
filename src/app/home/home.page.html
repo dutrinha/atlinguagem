@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar><ion-title>Calculadora de Empréstimos</ion-title></ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <ion-input type="number" label="Prestação" labelPlacement="floating" placeholder="valor"
+      [(ngModel)]="valorprestacao"></ion-input>
+  </ion-item>
+
+  <ion-range labelPlacement="start" label="Taxa de Juros" [pin]="true" [pinFormatter]="pinFormatter" min="0" [(ngModel)]="taxajuros">
+  </ion-range>
+
+  <ion-range labelPlacement="start" label="Meses Atrasados" [pin]="true" min="0"
+    max="300" step="1" [(ngModel)]="atrasoMeses">
+  </ion-range>
+
+  <ion-button expand="block" (click)="calcularPrestacao()">
+    <ion-icon name="Calcular"></ion-icon>
+  </ion-button>
+
+</ion-content>
